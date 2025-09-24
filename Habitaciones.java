@@ -7,18 +7,17 @@ public class Habitaciones {
 	private int capacidad;
 	private int costo;
 	private String descripcion;
-	private String nasa;
+	private String clase;
 	
-	private boolean habitaciones;
+	private boolean disponible=true;
 	
-	private int precio_total;
 	
-	public Habitaciones (int id,int capacidad,int costo,String descripcion,String nasa){
+	public Habitaciones (int id,int capacidad,int costo,String descripcion,String clase){
 		this.id=id;
 		this.capacidad=capacidad;
 		this.costo=costo;
 		this.descripcion=descripcion;
-		this.nasa=nasa;
+		this.clase=clase;
 		
 	}
 	public int get_ID(){
@@ -45,16 +44,22 @@ public class Habitaciones {
 	public void set_descripcion (String descripcion2){
 		descripcion=descripcion2;
 	}
-	public String get_nasa(){
-		return nasa;
+	public String get_clase(){
+		return clase;
 	}
-	public void set_nasa (String nasa2){
-		nasa=nasa2;
+	public void set_clase (String clase2){
+		clase=clase2;
 	}
 	public int costoxnoche (int id){
 		return costo;
 	}
+	public boolean disponible_get (){
+		return disponible;
+		}
+	public void set_disponible (boolean di){
+		disponible=di;
+	}
 	
-
 	
 }
+
