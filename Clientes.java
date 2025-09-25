@@ -64,4 +64,11 @@ public class Clientes {
 		Telefono = nuevoValor;
 	}
 
+	public void InfoCliente() {
+		System.out.println("DNI: "+Dni+" Nombre: "+Nombre+" Apellido: "+Apellido+" Email: "+Email+" Telefono: "+Telefono);
+	}
+
 }
+
+
+
