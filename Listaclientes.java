@@ -10,14 +10,23 @@ public class Listaclientes {
 	}
 	
 	public void MostrarCliente(int idcliente) {
-		for (int i=0;i<=cliente.size();i++)
+		for (int i=0;i<=cliente.size();i++) {
 			Clientes clientito = cliente.get(i);
-		if (clientito.getId()==idcliente)
+		if (clientito.getId()==idcliente) {
 			System.out.println(clientito.InfoCliente());
+		}
+		}
 	}
 	
 	public void EliminarCliente (int idcliente) {
-		for (int i=0;i<=cliente.size();i++)
+		for (int i=0;i<=cliente.size();i++) {
+			Clientes clientito = cliente.get(i);
+			if (clientito.getID()==idcliente) {
+				cliente.remove(cliente.get(i));
+			} else {
+				System.out.println("Cliente no encontrado X");
+			}
+		}
 			
 	}
 }
