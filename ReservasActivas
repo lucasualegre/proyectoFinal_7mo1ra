@@ -1,0 +1,20 @@
+package desarrollo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class ReservasActivas extends ListaReservas {
+	private int reservis2;
+	public void reservis (int ReservaId){
+		this.reservis=ReservaId;
+	}
+	ListaReservas res = new ListaReservas();
+	public void TiempoReservado(int ReservaId) {
+		super.TiempoReservado(ReservaId);
+	}
+	List<String> ReservasActivas = new ArrayList();
+	
+	
+
+}
