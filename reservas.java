@@ -1,20 +1,19 @@
-package desarrollo;
-
+import java.time.LocalDate;
 public class reservas {
 
 	private int ReservaId; 
 	private int ClienteId;
 	private int HabitacionId;
-	private int FechayHoraIngreso;
-	private int FechayHoraSalida;
-	private int MetodoPago;
+	private LocalDate FechaIngreso;
+	private LocalDate FechaSalida;
+	private String MetodoPago;
 
-	public reservas (int ReservaId, int ClienteId , int HabitacionId, int FechayHoraIngreso, int FechayHoraSalida, int MetodoPago) {
+	public reservas (int ReservaId, int ClienteId , int HabitacionId, LocalDate FechaIngreso, LocalDate FechaSalida, int MetodoPago) {
 		this.ReservaId=ReservaId;
 		this.ClienteId=ClienteId;
 		this.HabitacionId=HabitacionId;
-		this.FechayHoraIngreso=FechayHoraIngreso;
-		this.FechayHoraSalida=FechayHoraSalida;
+		this.FechaIngreso=FechaIngreso;
+		this.FechaSalida=FechaSalida;
 		this.MetodoPago=MetodoPago;
 	}
 
@@ -42,27 +41,27 @@ public class reservas {
 		HabitacionId = habitacionId;
 	}
 
-	public int getFechayHoraIngreso() {
-		return FechayHoraIngreso;
+	public LocalDate getFechaIngreso() {
+		return FechaIngreso;
 	}
 
-	public void setFechayHoraIngreso(int fechayHoraIngreso) {
-		FechayHoraIngreso = fechayHoraIngreso;
+	public void setFechaIngreso(LocalDate fechaIngreso) {
+		FechaIngreso = fechaIngreso;
 	}
 
-	public int getFechayHoraSalida() {
-		return FechayHoraSalida;
+	public LocalDate getFechaSalida() {
+		return FechaSalida;
 	}
 
-	public void setFechayHoraSalida(int fechayHoraSalida) {
-		FechayHoraSalida = fechayHoraSalida;
+	public void setFechaSalida(LocalDate fechaSalida) {
+		FechaSalida = fechaSalida;
 	}
 
-	public int getMetodoPago() {
+	public String getMetodoPago() {
 		return MetodoPago;
 	}
 
-	public void setMetodoPago(int metodoPago) {
+	public void setMetodoPago(String metodoPago) {
 		MetodoPago = metodoPago;
 	}
 }
