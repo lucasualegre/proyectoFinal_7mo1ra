@@ -7,7 +7,7 @@ public class listaReservas {
 	
 	List<reservas> reserva = new ArrayList<>();
 
-	public void CrearReserva(int ReservaId, int ClienteId , int HabitacionId, int FechaIngreso, int FechaSalida, int MetodoPago){
+	public void CrearReserva(int ReservaId, int ClienteId , int HabitacionId, LocalDate FechaIngreso, LocalDate FechaSalida, int MetodoPago){
 		
 	reservas reserva = new reservas(ReservaId,ClienteId,HabitacionId,FechaIngreso,FechaSalida,MetodoPago);
 	this.reserva.add(reserva);
@@ -48,4 +48,5 @@ public class listaReservas {
 	}
 		}
 }
+
 
