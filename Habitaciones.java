@@ -9,7 +9,7 @@ public class Habitaciones {
 	private boolean disponible=true;
 	
 	
-	public Habitaciones (int id,int capacidad,int costo,String descripcion,String clase){
+	public Habitaciones (int id,int capacidad,int costo,String descripcion,String clase,boolean disponible){
 		this.id=id;
 		this.capacidad=capacidad;
 		this.costo=costo;
@@ -59,4 +59,5 @@ public class Habitaciones {
 	
 	
 }
+
 
