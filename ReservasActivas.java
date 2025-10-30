@@ -19,6 +19,16 @@ public class ReservasActivas extends listaReservas {
 			}
 
 		}
+		public void preciototal (int habitacionId){
+		for (int i=0;i<lista_de_habitaciones.size();i++){
+			lista_de_habitaciones lis = lista_de_habitaciones.get(i);
+			if (lis.getReservaId()==habitacionId){
+				System.out.println( "Precion total :"+super.gettotaldias()*super.get_costo);
+			}
+
+		}
 		
 	}
+	}
 }
+
